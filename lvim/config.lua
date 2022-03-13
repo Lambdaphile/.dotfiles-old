@@ -11,7 +11,14 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "onedarker"
+lvim.colorscheme = "tokyonight"
+vim.g.tokyonight_style = "night"
+vim.opt.list = true
+vim.opt.listchars:append("eol:↴")
+
+require("indent_blankline").setup {
+    show_end_of_line = true,
+}
 vim.opt.cmdheight = 1
 vim.opt.relativenumber = true
 -- keymappings [view all the defaults by pressing <leader>Lk]
@@ -149,7 +156,15 @@ lvim.plugins = {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
-  { "projekt0n/github-nvim-theme" }
+  { "projekt0n/github-nvim-theme" },
+  { "sainnhe/gruvbox-material" },
+  { "cocopon/iceberg.vim" },
+  { "whatyouhide/vim-gotham" },
+  { "Rigellute/rigel" },
+  { "lukas-reineke/indent-blankline.nvim" },
+  {"catppuccin/nvim"},
+  {"fcpg/vim-fahrenheit"},
+  {"altercation/vim-colors-solarized"}
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
