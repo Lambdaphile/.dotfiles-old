@@ -11,8 +11,8 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "tokyonight"
-vim.g.tokyonight_style = "night"
+lvim.colorscheme = "onedarker"
+-- vim.g.tokyonight_style = "night"
 vim.opt.list = true
 vim.opt.listchars:append("eol:↴")
 
