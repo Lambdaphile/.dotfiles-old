@@ -13,12 +13,12 @@ lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "onedarker"
 -- vim.g.tokyonight_style = "night"
-vim.opt.list = true
-vim.opt.listchars:append("eol:↴")
+-- vim.opt.list = true
+-- vim.opt.listchars:append("eol:↴")
 
-require("indent_blankline").setup {
-    show_end_of_line = true,
-}
+-- require("indent_blankline").setup {
+--    show_end_of_line = true,
+-- }
 vim.opt.cmdheight = 1
 vim.opt.relativenumber = true
 -- keymappings [view all the defaults by pressing <leader>Lk]
