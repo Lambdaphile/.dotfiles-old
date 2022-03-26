@@ -62,7 +62,8 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
-lvim.builtin.dashboard.active = true
+lvim.builtin.alpha.active = true
+lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "bottom"
@@ -161,10 +162,12 @@ lvim.plugins = {
   { "cocopon/iceberg.vim" },
   { "whatyouhide/vim-gotham" },
   { "Rigellute/rigel" },
-  { "lukas-reineke/indent-blankline.nvim" },
-  {"catppuccin/nvim"},
-  {"fcpg/vim-fahrenheit"},
-  {"altercation/vim-colors-solarized"}
+--  { "lukas-reineke/indent-blankline.nvim" },
+  { "catppuccin/nvim" },
+  { "fcpg/vim-fahrenheit" },
+  { "altercation/vim-colors-solarized"},
+  { "rebelot/kanagawa.nvim"},
+  { "RRethy/nvim-base16" }
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
